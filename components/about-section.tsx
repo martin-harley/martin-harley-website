@@ -102,7 +102,7 @@ export function AboutSection() {
 
             <div>
               <p className="body-text text-foreground-secondary">
-                When I&apos;m not architecting pipelines or coding, I&apos;m at the beach surfing, exploring new cities, or
+                When I&apos;m not architecting pipelines or coding, I&apos;m cooking delicious meals, exploring new cities, or
                 creating experimental side projects.
               </p>
             </div>
