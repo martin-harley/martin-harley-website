@@ -70,11 +70,10 @@ export function ParticleLogo() {
       return 1
     }
 
-    function createParticle(scale: number) {
+    function createParticle() {
       if (!ctx || !canvas || !textImageData) return null
 
       const data = textImageData.data
-      const particleGap = 2
 
       for (let attempt = 0; attempt < 100; attempt++) {
         const x = Math.floor(Math.random() * canvas.width)
@@ -98,18 +97,19 @@ export function ParticleLogo() {
       return null
     }
 
-    function createInitialParticles(scale: number) {
+    function createInitialParticles() {
+      if (!canvas) return
       const baseParticleCount = 7000
       const particleCount = Math.floor(baseParticleCount * Math.sqrt((canvas.width * canvas.height) / (1920 * 1080)))
       for (let i = 0; i < particleCount; i++) {
-        const particle = createParticle(scale)
+        const particle = createParticle()
         if (particle) particles.push(particle)
       }
     }
 
     let animationFrameId: number
 
-    function animate(scale: number) {
+    function animate() {
       if (!ctx || !canvas) return
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       ctx.fillStyle = "hsl(240 5% 10%)"
@@ -143,7 +143,7 @@ export function ParticleLogo() {
 
         p.life--
         if (p.life <= 0) {
-          const newParticle = createParticle(scale)
+          const newParticle = createParticle()
           if (newParticle) {
             particles[i] = newParticle
           } else {
@@ -158,22 +158,22 @@ export function ParticleLogo() {
         baseParticleCount * Math.sqrt((canvas.width * canvas.height) / (1920 * 1080)),
       )
       while (particles.length < targetParticleCount) {
-        const newParticle = createParticle(scale)
+        const newParticle = createParticle()
         if (newParticle) particles.push(newParticle)
       }
 
-      animationFrameId = requestAnimationFrame(() => animate(scale))
+      animationFrameId = requestAnimationFrame(() => animate())
     }
 
-    const scale = createTextImage()
-    createInitialParticles(scale)
-    animate(scale)
+    createTextImage()
+    createInitialParticles()
+    animate()
 
     const handleResize = () => {
       updateCanvasSize()
-      const newScale = createTextImage()
+      createTextImage()
       particles = []
-      createInitialParticles(newScale)
+      createInitialParticles()
     }
 
     const handleMove = (x: number, y: number) => {

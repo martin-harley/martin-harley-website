@@ -32,7 +32,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Data Engineering Projects",
+    title: "Engineering Projects",
     category: "Project",
     year: "2023",
     description:
@@ -45,7 +45,7 @@ const projects = [
     category: "Work",
     year: "2022",
     description:
-      "Engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity and traceability of global payment systems.",
+      "Engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity of global payment systems.",
     link: "https://dlocal.com/",
   },
 ]
