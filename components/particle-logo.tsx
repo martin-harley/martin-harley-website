@@ -55,12 +55,33 @@ export function ParticleLogo() {
 
       const fontSize = isMobile ? 80 : 160
       ctx.font = `bold ${fontSize}px Arial, sans-serif`
-      const harleyText = "Martin Harley"
-      const harleyTextWidth = ctx.measureText(harleyText).width
 
-      // Center the text
-      ctx.translate(canvas.width / 2 - harleyTextWidth / 2, canvas.height / 2 + fontSize / 3)
-      ctx.fillText(harleyText, 0, 0)
+      if (isMobile) {
+        // Stack "Martin" and "Harley" vertically on mobile
+        const martinText = "Martin"
+        const harleyText = "Harley"
+        const martinWidth = ctx.measureText(martinText).width
+        const harleyWidth = ctx.measureText(harleyText).width
+        const lineHeight = fontSize * 1.2
+
+        // Center both lines horizontally
+        const maxWidth = Math.max(martinWidth, harleyWidth)
+        const startX = canvas.width / 2 - maxWidth / 2
+        const startY = canvas.height / 2 - lineHeight / 2
+
+        // Draw "Martin" on top
+        ctx.fillText(martinText, startX, startY - lineHeight / 2)
+        // Draw "Harley" on bottom
+        ctx.fillText(harleyText, startX, startY + lineHeight / 2)
+      } else {
+        // Single line on desktop
+        const harleyText = "Martin Harley"
+        const harleyTextWidth = ctx.measureText(harleyText).width
+
+        // Center the text
+        ctx.translate(canvas.width / 2 - harleyTextWidth / 2, canvas.height / 2 + fontSize / 3)
+        ctx.fillText(harleyText, 0, 0)
+      }
 
       ctx.restore()
 
