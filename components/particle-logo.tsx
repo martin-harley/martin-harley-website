@@ -60,19 +60,17 @@ export function ParticleLogo() {
         // Stack "Martin" and "Harley" vertically on mobile
         const martinText = "Martin"
         const harleyText = "Harley"
-        const martinWidth = ctx.measureText(martinText).width
-        const harleyWidth = ctx.measureText(harleyText).width
         const lineHeight = fontSize * 1.2
 
-        // Center both lines horizontally
-        const maxWidth = Math.max(martinWidth, harleyWidth)
-        const startX = canvas.width / 2 - maxWidth / 2
-        const startY = canvas.height / 2 - lineHeight / 2
+        // Center vertically - account for baseline positioning
+        const centerY = canvas.height / 2
+        const martinY = centerY - lineHeight / 2 + fontSize / 3
+        const harleyY = centerY + lineHeight / 2 + fontSize / 3
 
-        // Draw "Martin" on top
-        ctx.fillText(martinText, startX, startY - lineHeight / 2)
-        // Draw "Harley" on bottom
-        ctx.fillText(harleyText, startX, startY + lineHeight / 2)
+        // Center each line horizontally individually
+        ctx.textAlign = "center"
+        ctx.fillText(martinText, canvas.width / 2, martinY)
+        ctx.fillText(harleyText, canvas.width / 2, harleyY)
       } else {
         // Single line on desktop
         const harleyText = "Martin Harley"
