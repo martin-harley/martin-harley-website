@@ -5,9 +5,9 @@ import { motion } from "framer-motion"
 const projects = [
   {
     id: 0,
-    title: "Perin Health Devices",
+    title: "Perin Health",
     category: "Work",
-    year: "2024",
+    year: "2025",
     description:
       "Full-stack development, database architecture, and quality engineering for a HIPAA-compliant health platform with automated CI/CD.",
     link: "https://www.perinhealth.com",
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Data Engineering - GitHub",
+    title: "Data Engineering Projects",
     category: "Project",
     year: "2023",
     description:
@@ -41,12 +41,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "WordLadderWar",
-    category: "Game Development",
-    year: "2025",
+    title: "dLocal",
+    category: "Work",
+    year: "2022",
     description:
-      "A fast-paced word transformation game with real-time multiplayer and custom dictionaries. Features an elegant interface that makes wordplay addictive.",
-    link: "https://word-ladder-war.vercel.app/",
+      "Engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity and traceability of global payment systems.",
+    link: "https://dlocal.com/",
   },
 ]
 

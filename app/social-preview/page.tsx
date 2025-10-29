@@ -27,7 +27,7 @@ export default function SocialPreviewPage() {
                 <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
                   <div className="max-w-md mx-auto bg-white rounded-md shadow-sm overflow-hidden">
                     <div className="p-4">
-                      <p className="text-sm font-medium text-gray-900">damilareoo.xyz</p>
+                      <p className="text-sm font-medium text-gray-900">martin-harley.vercel.app</p>
                       <h4 className="text-base font-semibold mt-1">Martin Harley | Engineer & Developer</h4>
                       <p className="text-sm text-gray-500 mt-1">
                         Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.
@@ -49,7 +49,7 @@ export default function SocialPreviewPage() {
                       <p className="text-sm text-gray-500 mt-1">
                         Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.
                       </p>
-                      <p className="text-xs text-gray-400 mt-2">damilareoo.xyz</p>
+                      <p className="text-xs text-gray-400 mt-2">martin-harley.vercel.app</p>
                     </div>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ export default function SocialPreviewPage() {
                   <div className="max-w-md mx-auto bg-white rounded-md shadow-sm overflow-hidden">
                     <Image src="/images/og-image.png" alt="LinkedIn Preview" width={1200} height={630} className="w-full h-auto" />
                     <div className="p-4">
-                      <p className="text-xs text-gray-500">damilareoo.xyz</p>
+                      <p className="text-xs text-gray-500">martin-harley.vercel.app</p>
                       <h4 className="text-base font-semibold mt-1">Martin Harley | Engineer & Developer</h4>
                       <p className="text-sm text-gray-500 mt-1">
                         Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.

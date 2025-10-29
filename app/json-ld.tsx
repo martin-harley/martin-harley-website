@@ -5,8 +5,8 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Martin Harley",
-    url: "https://damilareoo.xyz",
-    image: "https://damilareoo.xyz/api/og-image",
+    url: "https://martin-harley.vercel.app/",
+    image: "https://martin-harley.vercel.app/api/og-image",
     jobTitle: "Engineer & Developer",
     description: "Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.",
     sameAs: [
