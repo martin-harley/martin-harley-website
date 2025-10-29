@@ -17,12 +17,12 @@ const timestamp = new Date().getTime()
 export const metadata: Metadata = {
   title: "Martin Harley | Engineer & Developer",
   description: "Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.",
-  metadataBase: new URL("https://martin-harley.vercel.app/"),
+  metadataBase: new URL("https://martinharley.vercel.app/"),
   openGraph: {
     title: "Martin Harley | Designer & Developer",
     description: "Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure.",
-    url: "https://martin-harley.vercel.app/",
-    siteName: "Martin Harley | martin-harley.vercel.app",
+    url: "https://martinharley.vercel.app/",
+    siteName: "Martin Harley | martinharley.vercel.app",
     images: [
       {
         url: `/images/og-image.png?v=${timestamp}`,
@@ -52,28 +52,28 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Force refresh of social media cache with timestamp */}
-        <meta property="og:image" content={`https://martin-harley.vercel.app/images/og-image.png?v=${timestamp}`} />
+        <meta property="og:image" content={`https://martinharley.vercel.app/images/og-image.png?v=${timestamp}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Martin Harley" />
         <meta property="og:image:type" content="image/png" />
 
-        <meta name="twitter:image" content={`https://martin-harley.vercel.app/images/og-image.png?v=${timestamp}`} />
+        <meta name="twitter:image" content={`https://martinharley.vercel.app/images/og-image.png?v=${timestamp}`} />
         <meta name="twitter:image:alt" content="Martin Harley" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* LinkedIn specific */}
-        <meta property="og:image:secure_url" content={`https://martin-harley.vercel.app/images/og-image.png?v=${timestamp}`} />
+        <meta property="og:image:secure_url" content={`https://martinharley.vercel.app/images/og-image.png?v=${timestamp}`} />
 
         {/* Additional social media tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://martin-harley.vercel.app/" />
+        <meta property="og:url" content="https://martinharley.vercel.app/" />
         <meta property="og:title" content="Martin Harley | Designer & Developer" />
         <meta
           property="og:description"
           content="Portfolio of Martin Harley, engineer building secure, reliable, and scalable digital infrastructure."
         />
-        <meta property="og:site_name" content="Martin Harley | martin-harley.vercel.app" />
+        <meta property="og:site_name" content="Martin Harley | martinharley.vercel.app" />
 
         {/* Cache control for better refreshing */}
         <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
