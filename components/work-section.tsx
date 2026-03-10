@@ -9,7 +9,7 @@ const projects = [
     category: "Work",
     year: "2026",
     description:
-      "Founding Senior Full-stack Engineer & Quality Assurance Engineer for a HIPAA-compliant health platform with automated CI/CD.",
+      "Founding Senior Full-Stack & Quality Assurance Engineer for a HIPAA-compliant health platform. Engineered the platform from the ground up, including the database, cloud infrastructure, backend, frontend, and QA processes.",
     link: "https://www.perinhealth.com",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     category: "Project",
     year: "2026",
     description:
-      "Co-founder of Nocti Labs, a startup specialized in engineered commerce solutions for the next generation of digital businesses.",
+      "Co-founder of Nocti Labs, a startup specialized in engineered commerce solutions for the next generation of digital businesses. We design and develop modular, scalable ecosystems that integrate AI, automation, and advanced workflows across all channels.",
     link: "https://noctilabs.io/",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     category: "Project",
     year: "2026",
     description:
-      "CTO & Founder of ythos, an AI-powered app that centralizes volunteer opportunities in one place, helping users discover roles and connect with others.",
+      "CTO & Founder of ythos, an AI-powered app that centralizes volunteer opportunities in one place, helping users discover roles and connect with others. Currently leading the development and design of the iOS app and backend infrastructure.",
     link: "https://ythos.app/",
   },
   {
@@ -36,27 +36,27 @@ const projects = [
     category: "Work",
     year: "2025",
     description:
-      "Founding Senior Architect & Software Engineer for the Energy Audit product, an energy audit tool for businesses to reduce their energy consumption and costs.",
+      "Founding Senior Architect & Software Engineer for the Energy Audit product, an energy audit tool for businesses to reduce their energy consumption and costs. Current clients include Kaiser Permanente, Goodwill, and more.",
     link: "https://dev.wattwise.app/",
   },
   {
     id: 4,
-    title: "Engineering Projects",
-    category: "Project",
-    year: "2023",
-    description:
-      "Personal Projects demonstrating data engineering and analytics using SQL, Python, and R.",
-    link: "https://github.com/martin-harley/PortfolioProjects",
-  },
-  {
-    id: 5,
     title: "dLocal",
     category: "Work",
     year: "2022",
     description:
       "Lead Backend & Data Engineer for the fraud detection team, engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity of global payment systems.",
     link: "https://dlocal.com/",
-  }
+  },
+  {
+    id: 5,
+    title: "Engineering Projects",
+    category: "Project",
+    year: "2019",
+    description:
+      "Early career personal projects demonstrating data engineering and analytics using SQL, Python, and R. Projects were developed during UCLA's Data Science Bootcamp and are not currently maintained.",
+    link: "https://github.com/martin-harley/PortfolioProjects",
+  },
 ]
 
 export function WorkSection() {
