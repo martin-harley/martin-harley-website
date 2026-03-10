@@ -62,7 +62,7 @@ export function AboutSection() {
           <motion.div variants={itemVariants} className="flex flex-col space-y-16">
             <div>
               <p className="body-text text-foreground-secondary">
-                Full-stack engineer with a DevOps mindset, focused on building secure, scalable, and production-ready
+                Lead Full-Stack Engineer & Quality Assurance Engineer with a DevOps mindset, focused on building secure, scalable, and production-ready
                 systems.
               </p>
             </div>
