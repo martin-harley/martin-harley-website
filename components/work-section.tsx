@@ -5,49 +5,58 @@ import { motion } from "framer-motion"
 const projects = [
   {
     id: 0,
-    title: "Perin Health",
+    title: "Perin Health Devices",
     category: "Work",
-    year: "2025",
+    year: "2026",
     description:
-      "Full-stack development, database architecture, and quality engineering for a HIPAA-compliant health platform with automated CI/CD.",
+      "Founding Senior Full-stack Engineer & Quality Assurance Engineer for a HIPAA-compliant health platform with automated CI/CD.",
     link: "https://www.perinhealth.com",
   },
   {
     id: 1,
-    title: "Email Template Generator",
+    title: "Nocti Labs",
     category: "Project",
-    year: "2025",
+    year: "2026",
     description:
-      "A modern web app for creating, managing, and previewing email templates with built-in version control, dynamic variables, and live preview",
-    link: "https://messages-api-kappa.vercel.app/",
+      "Co-founder of Nocti Labs, a startup specialized in engineered commerce solutions for the next generation of digital businesses.",
+    link: "https://noctilabs.io/",
   },
   {
     id: 2,
-    title: "TapShelf",
+    title: "ythos",
     category: "Project",
-    year: "2025",
+    year: "2026",
     description:
-      "A tap-to-collect NFC-to-NFT platform for mini figures, combining Swift-powered iOS experiences with a modern Next.js backend.",
-    link: "https://pixel-soccer.vercel.app",
+      "CTO & Founder of ythos, an AI-powered app that centralizes volunteer opportunities in one place, helping users discover roles and connect with others.",
+    link: "https://ythos.app/",
   },
   {
     id: 3,
+    title: "Energy Audit",
+    category: "Work",
+    year: "2025",
+    description:
+      "Founding Senior Architect & Software Engineer for the Energy Audit product, an energy audit tool for businesses to reduce their energy consumption and costs.",
+    link: "https://dev.wattwise.app/",
+  },
+  {
+    id: 4,
     title: "Engineering Projects",
     category: "Project",
     year: "2023",
     description:
-      "Projects demonstrating data engineering and analytics using SQL, Python, and R.",
+      "Personal Projects demonstrating data engineering and analytics using SQL, Python, and R.",
     link: "https://github.com/martin-harley/PortfolioProjects",
   },
   {
-    id: 4,
+    id: 5,
     title: "dLocal",
     category: "Work",
     year: "2022",
     description:
-      "Engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity of global payment systems.",
+      "Lead Backend & Data Engineer for the fraud detection team, engineered forensic tools and data pipelines to investigate transactional anomalies, detect fraud patterns, and strengthen the integrity of global payment systems.",
     link: "https://dlocal.com/",
-  },
+  }
 ]
 
 export function WorkSection() {
