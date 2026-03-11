@@ -131,7 +131,7 @@ export function WorkSection() {
                 </div>
 
                 {/* Project description that appears on hover */}
-                <div className="max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-500 ease-out">
+                <div className="max-h-0 overflow-hidden group-hover:max-h-48 transition-all duration-500 ease-out">
                   <p className="project-description text-foreground-secondary max-w-2xl pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 ease-out">
                     {project.description}
                   </p>
